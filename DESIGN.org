@@ -40,4 +40,13 @@ Why does it use the package name =flycheck-org-vale=?
 
 ** Software Type
 
+Why is it a library?
 
+- Modes:
+  - "[[Emacs][Emacs]] contains many editing modes that alter its basic behavior in useful ways."
+  - Major Modes: "[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Major-Modes.html][Every buffer]] possesses a major mode, which determines the editing behavior of Emacs while that buffer is current"
+  - Minor Modes: "[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Minor-Modes.html][A minor mode]] is an optional editing mode that alters the behavior of Emacs in some well-defined way."
+- Software:
+  - "[[https://en.wikipedia.org/wiki/Library_(computing)][A library]] is also a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked."
+  - Flycheck uses [[https://www.flycheck.org/en/latest/developer/developing.html][extension libraries]] to add support for linters
+- Therefore this is a library providing a linter through Flycheck
