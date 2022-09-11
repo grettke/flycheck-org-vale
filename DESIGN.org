@@ -50,3 +50,8 @@ Why is it a library?
   - "[[https://en.wikipedia.org/wiki/Library_(computing)][A library]] is also a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked."
   - Flycheck uses [[https://www.flycheck.org/en/latest/developer/developing.html][extension libraries]] to add support for linters
 - Therefore this is a library providing a linter through Flycheck
+
+** TODO Mode Support
+:LOGBOOK:
+- State "TODO"       from              [2022-09-11 Sun 16:04]
+:END:
