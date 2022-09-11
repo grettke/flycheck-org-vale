@@ -1,0 +1,14 @@
+#+title: Design
+
+* Justifications
+
+** License
+
+Why does this use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]?
+
+- User Goals:
+  - Easy to obtain
+  - Easy to modify and redistribute
+- Design Logic:
+  - [[https://melpa.org/#/][MELPA]] is the dominant package distribution system and it requires packages to use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]
+  - Most developers want an open source license and specifically GPLv3 which is a license [[https://opensource.org/licenses/GPL-3.0][approved by the open source]]
