@@ -12,3 +12,24 @@ Why does this use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]?
 - Design Logic:
   - [[https://melpa.org/#/][MELPA]] is the dominant package distribution system and it requires packages to use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]
   - Most developers want an open source license and specifically GPLv3 which is a license [[https://opensource.org/licenses/GPL-3.0][approved by the open source]]
+
+** Package Name
+
+Why does this use the package name =flycheck-org-vale=?
+
+- What should the name start with?
+  - Around [[https://melpa.org/#/?q=flycheck][100]] packages on MELPA are =flycheck= related
+  - Only about 10 of them /don't/ start with =flycheck=
+  - Therefore the first word is =flycheck=
+- Most of the remaining name suffixes (after =flycheck=) either have one word, the =linter= used, or the content =type= linted, or a combination of both separated by a dash
+- This content type is =org=
+- This linter is =vale=
+- Should the suffix be one or two words?
+  - Vale lints many files types
+  - This package only support =org=
+  - Therefore use two words
+- In what order should the words appear: =content= that is =linted= or =linter= for =content=?
+  - Reading from left to right in order of broader to more granular details follows most [[https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html][software]] and [[https://www.iso.org/iso-8601-date-and-time-format.html][time]] conventions
+  - The constant ~flycheck-checkers~ in [[https://github.com/flycheck/flycheck/blob/master/flycheck.el][flycheck.el]] demonstrates for example with =python=, =ruby=, and =sh= that the broad to granular order is common within the package itself
+  - This addresses all of =org= narrowed down to one =linter= for which there are others
+  - Therefore the last two words should be =org-vale=
