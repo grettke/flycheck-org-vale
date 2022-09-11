@@ -1,10 +1,14 @@
 #+title: Design
 
+* About
+
+- =it= always refers to this software package
+
 * Justifications
 
 ** License
 
-Why does this use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]?
+Why does it use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]?
 
 - User Goals:
   - Easy to obtain
@@ -15,7 +19,7 @@ Why does this use the [[file:LICENSE][GNU GENERAL PUBLIC LICENSE Version 3]]?
 
 ** Package Name
 
-Why does this use the package name =flycheck-org-vale=?
+Why does it use the package name =flycheck-org-vale=?
 
 - What should the name start with?
   - Around [[https://melpa.org/#/?q=flycheck][100]] packages on MELPA are =flycheck= related
@@ -33,3 +37,7 @@ Why does this use the package name =flycheck-org-vale=?
   - The constant ~flycheck-checkers~ in [[https://github.com/flycheck/flycheck/blob/master/flycheck.el][flycheck.el]] demonstrates for example with =python=, =ruby=, and =sh= that the broad to granular order is common within the package itself
   - This addresses all of =org= narrowed down to one =linter= for which there are others
   - Therefore the last two words should be =org-vale=
+
+** Software Type
+
+
