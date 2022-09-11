@@ -55,3 +55,8 @@ Why is it a library?
 :LOGBOOK:
 - State "TODO"       from              [2022-09-11 Sun 16:04]
 :END:
+
+** TODO Output Format
+:LOGBOOK:
+- State "TODO"       from              [2022-09-11 Sun 16:05]
+:END:
