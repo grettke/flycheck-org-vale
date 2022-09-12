@@ -2,7 +2,7 @@
 
 * About
 
-- =it= always refers to this software package
+- =it= or =this= always refers to this software package
 
 * Linting
 
