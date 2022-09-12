@@ -4,6 +4,69 @@
 
 - =it= always refers to this software package
 
+* Linting
+
+This plugin:
+
+- Formats Vale's output using a custom template
+- Imports it into Flycheck
+
+[[https://vale.sh/manual/output][Here is an explanation]] of how the process works.
+
+** Vale Template Variables
+
+Use its custom template like this with a fully-qualified path (path expansion doesn't work: not sure why not):
+
+#+begin_src sh
+vale --output=/Users/grant/src/flycheck-org-vale/flycheck-org-vale.tmpl DESIGN.org  | tail
+#+end_src
+
+The templates are written in [[https://pkg.go.dev/text/template][Go text/template]]s.
+
+Vale [[https://vale.sh/docs/integrations/guide/#json-output-of-checks][provides the following template variables]]
+
+- Action :: An action or change to the text that Vale server can take with a rule, containing a Name for the action and Params passed to the action.
+- Check :: The rule set and rule triggered.
+- Description :: A more detailed explanation for a rule. You can use it with custom output format or an editor integration’s UI.
+- Line :: The line that contains the error.
+- Link :: Link to explanation of style guide rule
+- Message :: Help text output by the rule
+- Severity :: The error level.
+- Span :: The start and finish characters on the line.
+- Match :: The text matched.
+
+Example provided in JSON format:
+
+#+begin_src json
+{
+  "index.md": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Check": "write-good.Passive",
+      "Description": "",
+      "Line": 6,
+      "Link": "",
+      "Message": "'was created' may be passive voice. Use active voice if you can.",
+      "Severity": "warning",
+      "Span": [
+        59,
+        69
+      ],
+      "Match": "was created"
+    },
+  ]
+}
+#+end_src
+
+The variables appear in [[https://github.com/errata-ai/vale/blob/v2/internal/check/definition.go][definition.go]] and don't appear to be documented. Their understanding isn't required to use the templates. In case they are helpful though they are defined around here:
+
+- The rule definition:  [[https://github.com/errata-ai/vale/blob/v2/internal/check/definition.go#L24][type Definition struct]]
+- How they are made: [[https://github.com/errata-ai/vale/blob/v2/internal/check/definition.go#L132][func makeAlert]]
+- Their types, the context for the rules: [[https://github.com/errata-ai/vale/blob/v2/internal/check/definition.go#L85][func buildRule]]
+
 * Justifications
 
 ** License
