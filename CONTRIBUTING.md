@@ -15,13 +15,12 @@ This project and everyone participating in it is governed by the [FlycheckOrgVal
 
 FlycheckOrgVale is a tiny open source project &mdash; it only uses one package.
 
-FlycheckOrgVale is intentionally very simple. It connects Org with Vale via
-FlyCheck. Anything else belongs outside this package.
+FlycheckOrgVale is intentionally very simple. It connects [Org](https://orgmode.org/) with [Vale](https://vale.sh/) via
+[FlyCheck](https://www.flycheck.org/en/latest/). Anything else belongs outside this package.
 
 ### Design Decisions
 
-When we make a significant decision in how we maintain the project and what we can or cannot support, we will document it in the [Design Decisions](https://github.com/grettke/flycheck-org-vale/blob/main/DESIGN.org). If you have a question around how we do things, check to see if it is documented there. If it is *not* documented there, please open a
-[new feature reques](https://github.com/grettke/flycheck-org-vale/issues/new/choose).
+When we make a significant decision in how we maintain the project and what we can or cannot support, we will document it in the [Design Decisions](https://github.com/grettke/flycheck-org-vale/blob/main/DESIGN.org). If you have a question around how we do things, check to see if it is documented there. If it is *not* documented there, please open a [new feature request](https://github.com/grettke/flycheck-org-vale/issues/new/choose).
 
 ## How Can I Contribute?
 
@@ -56,10 +55,9 @@ The process described here has several goals:
 
 Please follow these steps to have your contribution considered by the maintainers:
 
-1.The Emacs Lisp code should follow the
-[Emacs Lisp conventions](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html] and the [Emacs Lisp Style Guide](https://github.com/bbatsov/emacs-lisp-style-guide)
-2. Pass [checkdoc](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html)  [pacakge-lint](https://github.com/purcell/package-lint)'
+1.The Emacs Lisp code should follow the [Emacs Lisp conventions](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html) and the [Emacs Lisp Style Guide](https://github.com/bbatsov/emacs-lisp-style-guide)
+2. Pass [checkdoc](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html) and [package-lint](https://github.com/purcell/package-lint)
 3. `byte-compile-file` either without errors or including them with explanation.
-4. Documentation Spell and Grammar checking with [Vale](vale.sh/) for which this project is configured.
+4. Documentation Spell and Grammar checking with [Vale](https://vale.sh/) for which this project is configured.
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
