@@ -8,9 +8,11 @@ It attempts to make it easy for 99% of users to use without any configuration.
 
 So much so that there are no options.
 
+The checker is implemented in 24 lines and the formatter is implemented in 6 lines for a total of 30 lines of code and it works fine.
+
 The best way to customize this code is to copy and paste it into your own approach.
 
-- =it= or =this= always refers to this software package
+*Note*: =it= or =this= always refers to this software package
 
 * Linting
 
@@ -128,7 +130,6 @@ It is a package with a syntax checker.
 
 It doesn't add any special functionality so neither a major nor minor mode is required
 
-
 ** Output Format
 
 It exports a single line.
@@ -136,7 +137,6 @@ It exports a single line.
 It is easier to understand and similar to the default =CLI= output.
 
 =JSON= output is necessary and a pre-optimization.
-
 
 ** Vale Executable
 
@@ -147,7 +147,6 @@ This is the most likely name for 99% of the users.
 Anyone using it out of the path or with another name will easily
 be able to update their path accordingly or use a symbolic link for
 the program name.
-
 
 ** Vale INI
 
