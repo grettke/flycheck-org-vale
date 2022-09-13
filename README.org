@@ -25,6 +25,14 @@ Check it out running against this [[file:sample.org][sample]]:
   :after flycheck
   :config (add-hook 'flycheck-mode-hook #'flycheck-posframe-mode))
   #+end_src
+- It isn't released or available on MELPA yet so clone it, add it to your load path, and require it
+- Load it like this
+  #+begin_src emacs-lisp
+(add-to-list 'load-path "~/src/flycheck-org-vale")
+(require 'flycheck-org-vale)
+  #+end_src
+- Run Flycheck on your file and verify it is working
+- You are finished and ready to check all of your Org files!
 
 *Note*: Depending on the size of your Org file Vale can take a few seconds to do its job. Keep writing relaxed and its notifications will always appear at the perfect speed.
 
