@@ -20,7 +20,9 @@
 
 ;;; Commentary:
 
-;; Laser-Focused Zero-Configuration Single-File Vale Org Syntax Checker.
+;; FlycheckOrgVale:
+;; 
+;; A Laser-Focused Zero-Configuration Single-File Vale Org Syntax Checker.
 
 ;;; Code:
 
