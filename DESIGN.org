@@ -114,27 +114,38 @@ Why is it a library?
   - Flycheck uses [[https://www.flycheck.org/en/latest/developer/developing.html][extension libraries]] to add support for linters
 - Therefore this is a library providing a linter through Flycheck
 
-** TODO Mode Support
-:LOGBOOK:
-- State "TODO"       from              [2022-09-11 Sun 16:04]
-:END:
+** Mode Support
 
-** TODO Output Format
-:LOGBOOK:
-- State "TODO"       from              [2022-09-11 Sun 16:05]
-:END:
+It is a package with a syntax checker.
 
-** TODO Vale Executable
-:LOGBOOK:
-- State "TODO"       from              [2022-09-11 Sun 16:12]
-:END:
+It doesn't add any special functionality so neither a major nor minor mode is required
 
-** TODO Vale INI
-:LOGBOOK:
-- State "TODO"       from              [2022-09-11 Sun 16:06]
-:END:
 
-** TODO Content Origin
-:LOGBOOK:
-- State "TODO"       from              [2022-09-11 Sun 16:07]
-:END:
+** Output Format
+
+It exports a single line.
+
+It is easier to understand and similar to the default =CLI= output.
+
+=JSON= output is necessary and a pre-optimization.
+
+
+** Vale Executable
+
+The executable name is not configurable: it is the first =value= in the path.
+
+This is the most likely name for 99% of the users.
+
+Anyone using it out of the path or with another name will easily
+be able to update their path accordingly or use a symbolic link for
+the program name.
+
+
+** Vale INI
+
+The Vale INI file location is not configurable: it uses the default Vale behavior.
+
+Once you understand the default Vale behavior you have multiple options for ini utilization.
+
+You can use symbolic links to customize it further.
+
