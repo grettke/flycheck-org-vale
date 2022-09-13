@@ -8,6 +8,8 @@ Check it out running against this [[file:sample.org][sample]]:
 
 [[file:/sample.png]]
 
+*Note*: Literally ever Vale linter I could find is enabled: you probably won't run it with this much stuff at a time but hopefully it shows a few options that you might be interested in!
+
 * How To Use
 
 - Configure Emacs for [[https://emacsformacos.com/][macOS]], [[https://caiorss.github.io/Emacs-Elisp-Programming/Emacs_On_Windows.html][Windows]], or any UNIXen. [[https://www.masteringemacs.org/][Here]] is a great book about it.
