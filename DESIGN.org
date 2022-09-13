@@ -2,6 +2,14 @@
 
 * About
 
+FlycheckOrgVale is a simplistic Flycheck checker.
+
+It attempts to make it easy for 99% of users to use without any configuration.
+
+So much so that there are no options.
+
+The best way to customize this code is to copy and paste it into your own approach.
+
 - =it= or =this= always refers to this software package
 
 * Linting
