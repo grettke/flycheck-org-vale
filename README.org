@@ -1,0 +1,26 @@
+#+title: FlycheckOrgVale
+
+* About
+
+FlycheckOrgVale is a Laser-Focused Zero-Configuration Single-File Vale Org Syntax Checker for non-techies.
+
+Check it out running against this [[file:sample.org][sample]]:
+
+[[file:/sample.png]]
+
+* How To Use
+
+- Configure Emacs for [[https://emacsformacos.com/][macOS]], [[https://caiorss.github.io/Emacs-Elisp-Programming/Emacs_On_Windows.html][Windows]], or any UNIXen. [[https://www.masteringemacs.org/][Here]] is a great book about it.
+- Configure [[https://vale.sh/docs/vale-cli/installation/][Vale]] and add it to your =PATH=. [[file:.vale.ini][Here]] is a sample config for Org and [[https://vale.sh/hub/][here]] are some packages you might enjoy using.
+- Configure Emacs Package Archives, MELPA, ~use-package~, and Flycheck in one fell swoop using [[https://www.flycheck.org/en/latest/user/installation.html][these directions]].
+- Configure error popup messages:
+  #+begin_src emacs-lisp
+(use-package flycheck-posframe
+  :ensure t
+  :after flycheck
+  :config (add-hook 'flycheck-mode-hook #'flycheck-posframe-mode))
+  #+end_src
+
+* For Developers
+
+See [[file:DESIGN.org][DESIGN]] for design details.
