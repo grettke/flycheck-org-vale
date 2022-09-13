@@ -30,6 +30,8 @@
 
 ;;; Code:
 
+(require 'flycheck)
+
 (defun flycheck-org-vale--template-file ()
   "Gets the fully-qualified path of the Vale template.
 
