@@ -26,6 +26,8 @@ Check it out running against this [[file:sample.org][sample]]:
   :config (add-hook 'flycheck-mode-hook #'flycheck-posframe-mode))
   #+end_src
 
+*Note*: Depending on the size of your Org file Vale can take a few seconds to do its job. Keep writing relaxed and its notifications will always appear at the perfect speed.
+
 * For Developers
 
 See [[file:DESIGN.org][DESIGN]] for design details.
