@@ -3,7 +3,11 @@
 ;; Copyright (C) 2022  Wisdom and Wonder
 
 ;; Author: Grant Rettke <grant@wisdomandwonder.com>
+;; Version: 0.1.0
+;; Package-Requires: ((flycheck))
 ;; Keywords: convenience, languages, tools
+;; Homepage: https://github.com/org2blog/org2blog
+;; https://github.com/grettke/flycheck-org-vale
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
