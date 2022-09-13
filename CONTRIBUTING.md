@@ -55,9 +55,9 @@ The process described here has several goals:
 
 Please follow these steps to have your contribution considered by the maintainers:
 
-1.The Emacs Lisp code should follow the [Emacs Lisp conventions](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html) and the [Emacs Lisp Style Guide](https://github.com/bbatsov/emacs-lisp-style-guide)
-2. Pass [checkdoc](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html) and [package-lint](https://github.com/purcell/package-lint)
-3. `byte-compile-file` either without errors or including them with explanation.
-4. Documentation Spell and Grammar checking with [Vale](https://vale.sh/) for which this project is configured.
+1. The Emacs Lisp code should follow the [Emacs Lisp conventions](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html) and the [Emacs Lisp Style Guide](https://github.com/bbatsov/emacs-lisp-style-guide)
+1. Pass [checkdoc](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html) and [package-lint](https://github.com/purcell/package-lint)
+1. `byte-compile-file` either without errors or including them with explanation.
+1. Documentation Spell and Grammar checking with [Vale](https://vale.sh/) for which this project is configured.
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
