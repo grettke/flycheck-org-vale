@@ -59,7 +59,7 @@ experience better.
 
 It might feel like an inordinate amount of detail has gone
 into this explanation but it is important to justify the choice
-made here. "
+made here."
   (catch 'return
     (condition-case-unless-debug err
         (let* ((errfmt
