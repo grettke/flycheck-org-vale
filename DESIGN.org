@@ -156,3 +156,13 @@ Once you understand the default Vale behavior you have multiple options for ini 
 
 You can use symbolic links to customize it further.
 
+** Existing Codebases
+
+It doesn't use any pre-existing codebases because its 30 lines of code doesn't need them.
+
+They are:
+
+- [[https://github.com/abingham/flycheck-vale][flycheck-vale]]
+- [[https://github.com/tpeacock19/flymake-vale][flymake-vale]]
+- [[https://duncan.codes/posts/2020-09-14-prose-linting-vale-emacs.org/index.html][Prose linting with Vale and Emacs]]
+- [[https://emacstil.com/til/2022/03/05/setting-up-vale-prose-linter-on-emacs/][Set up Vale prose linter on Emacs]]
