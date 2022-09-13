@@ -4,7 +4,7 @@
 
 ;; Author: Grant Rettke <grant@wisdomandwonder.com>
 ;; Version: 0.1.0
-;; Package-Requires: ((flycheck "33"))
+;; Package-Requires: ((flycheck))
 ;; Keywords: convenience, languages, tools
 ;; Homepage: https://github.com/org2blog/org2blog
 ;; https://github.com/grettke/flycheck-org-vale
