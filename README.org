@@ -20,13 +20,13 @@ Check it out running against this [[file:sample.org][sample]]:
   :ensure t
   :init (global-flycheck-mode))
   #+end_src
-- Configure popup error messages:
+- Display messages in the title bar
   #+begin_src emacs-lisp
-(use-package flycheck-inline
+(use-package flycheck-title
   :ensure t
   :after flycheck
   :config
-  (add-hook 'flycheck-mode-hook #'flycheck-inline-mode))
+  (flycheck-title-mode))
   #+end_src
 - It isn't released or available on MELPA yet so clone it, add it to your load path, and require it
 - Load it like this
