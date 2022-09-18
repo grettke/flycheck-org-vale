@@ -138,6 +138,9 @@ It is easier to understand and similar to the default =CLI= output.
 
 =JSON= output is necessary and a pre-optimization.
 
+- Shouldn't Vale already output this format like the other formatters?
+  - [[https://github.com/errata-ai/vale/pull/488][This]] is why it does not
+
 ** Vale Executable
 
 The executable name is not configurable: it is the first =value= in the path.
